@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Filas */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  
+  /* Columnas */
+  .col {
+    flex: 1;
+    min-width: 250px;
+    background-color: #e8f0fe;
+    border-left: 5px solid #4a90e2;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .col:hover {
+    transform: translateY(-5px);
+    background-color: #dbe9ff;
+  }
+  
+  /* Párrafos */
+  p {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  
+  /* Imagen */
+  .image-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Asegura que las imágenes ocupen todo el ancho posible */
+  .image-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-row img:hover {
+    transform: scale(1.03);
+  }
